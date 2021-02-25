@@ -53,7 +53,8 @@
   ..\BSP\UART\uart.h ..\BSP\DMA_UART\dma_uart.h ..\BSP\I2C_EE\i2c_ee.h \
   ..\BSP\SPI_FLASH\spi_flash.h ..\BSP\LED\led.h ..\BSP\Key\key.h \
   ..\BSP\RTC\rtc.h ..\BSP\SDRAM\sdram.h ..\BSP\ADC\adc.h \
-  ..\BSP\TIMER\timer.h ..\BSP\TouchKey\touchKey.h ..\BSP\Beeper\beeper.h \
+  ..\BSP\TIMER\timer.h ..\BSP\Key\touchKey.h ..\BSP\Beeper\beeper.h \
   ..\BSP\IWDG\iwdg.h ..\BSP\WWDG\wwdg.h ..\BSP\LCD\lcd.h \
   ..\BSP\LCD\fonts.h ..\FATFS\ff.h ..\FATFS\integer.h ..\FATFS\ffconf.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\string.h
+  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\BSP\I2C_Touch\i2c_touch.h

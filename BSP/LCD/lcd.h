@@ -234,6 +234,22 @@ typedef struct
   sFONT    *pFont;
 }LCD_DrawPropTypeDef;   
 
+/** 
+  * @brief  LCD液晶类型
+  */   
+typedef enum
+{ 
+  INCH_5  = 0x00, /* 野火5寸屏 */
+  INCH_7,     /* 野火7寸屏 */
+  INCH_4_3,  /* 野火4.3寸屏 */
+  
+  LCD_TYPE_NUM /* LCD类型总数*/
+}LCD_TypeDef;
+
+
+/* 当前使用的LCD，默认为5寸屏 */
+extern LCD_TypeDef cur_lcd;
+
 void LCD_Init(void);
 void LCD_LayerInit(uint16_t LayerIndex, uint32_t FB_Address,uint32_t PixelFormat);
 void LCD_SetFont(sFONT *fonts);
@@ -260,4 +276,6 @@ void LCD_DisplayStringLineEx(uint16_t x, //显示的x点
 														 uint16_t Font_Heig,	//要显示的字体高度，注意为偶数
 														 uint8_t *ptr,				//显示的字符内容
 														 uint16_t DrawModel);  //是否反色显示
+
+
 #endif

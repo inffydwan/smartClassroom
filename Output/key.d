@@ -48,5 +48,5 @@
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h \
-  ..\BSP\Beeper\beeper.h ..\BSP\TouchKey\touchKey.h \
+  ..\BSP\Beeper\beeper.h ..\BSP\Key\touchKey.h \
   D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdio.h

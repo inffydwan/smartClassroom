@@ -19,6 +19,8 @@ static DMA2D_HandleTypeDef Dma2d_Handler;
 static uint32_t            ActiveLayer = 0;
 static LCD_DrawPropTypeDef DrawProp[MAX_LAYER_NUMBER];
 
+LCD_TypeDef cur_lcd = INCH_5;
+
 /**
   * @brief  初始化控制LCD的IO
   * @param  无

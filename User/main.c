@@ -244,6 +244,8 @@ int main(void)
 	f_mount(NULL,"1:",1);
   
   /* 操作完成，停机 */
+	
+	GTP_Init_Panel();
 
 	while(1)
 	{
@@ -280,7 +282,7 @@ static void Fill_Buffer(uint32_t *pBuffer, uint32_t uwBufferLenght, uint32_t uwO
 
 
 /* 简单的延时函数 */
-static void Delay(__IO uint32_t nCount)
+void Delay(__IO uint32_t nCount)
 {
 	for(; nCount != 0; nCount--);
 }

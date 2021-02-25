@@ -21,6 +21,7 @@
 #include "ff.h"
 #include <string.h>
 #include <stdio.h>
+#include "i2c_touch.h"
 
 typedef enum { FAILED = 0, PASSED = !FAILED} TestStatus;
 
@@ -28,7 +29,7 @@ typedef enum { FAILED = 0, PASSED = !FAILED} TestStatus;
 __IO TestStatus TransferStatus1 = FAILED;
 
 
-static void Delay(__IO uint32_t nCount);
+void Delay(__IO uint32_t nCount);
 static TestStatus Buffercmp(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength);
 
 

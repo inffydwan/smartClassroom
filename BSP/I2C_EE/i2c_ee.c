@@ -1,6 +1,6 @@
 #include "i2c_ee.h"
 
-I2C_HandleTypeDef  I2C_Handle; 
+static I2C_HandleTypeDef  I2C_Handle; 
 
 
 void HAL_I2C_MspInit()

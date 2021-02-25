@@ -1,5 +1,4 @@
-../output/touchkey.o: ..\BSP\TouchKey\touchKey.c \
-  ..\BSP\TouchKey\touchKey.h \
+../output/touchkey.o: ..\BSP\Key\touchKey.c ..\BSP\Key\touchKey.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\User\stm32f4xx_hal_conf.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \

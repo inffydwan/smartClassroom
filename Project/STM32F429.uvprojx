@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx,USE_STM32F429I_DISCO</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_HAL_Driver\Inc;..\User;..\BSP\LED;..\BSP\Key;..\BSP\EXIT;..\BSP\UART;..\BSP\DMA_UART;..\BSP\I2C_EE;..\BSP\SPI_FLASH;..\BSP\RTC;..\BSP\RCC;..\BSP\SDRAM;..\BSP\LCD;..\BSP\ADC;..\BSP\TIMER;..\BSP\TouchKey;..\BSP\Beeper;..\BSP\IWDG;..\BSP\WWDG;..\FATFS</IncludePath>
+              <IncludePath>..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_HAL_Driver\Inc;..\User;..\BSP\LED;..\BSP\Key;..\BSP\EXIT;..\BSP\UART;..\BSP\DMA_UART;..\BSP\I2C_EE;..\BSP\SPI_FLASH;..\BSP\RTC;..\BSP\RCC;..\BSP\SDRAM;..\BSP\LCD;..\BSP\ADC;..\BSP\TIMER;..\BSP\TouchKey;..\BSP\Beeper;..\BSP\IWDG;..\BSP\WWDG;..\FATFS;..\BSP\I2C_Touch</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -533,6 +533,11 @@
               <FileType>1</FileType>
               <FilePath>..\Libraries\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -624,11 +629,6 @@
               <FilePath>..\BSP\TIMER\advancedTimer.c</FilePath>
             </File>
             <File>
-              <FileName>touchKey.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\TouchKey\touchKey.c</FilePath>
-            </File>
-            <File>
               <FileName>beeper.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\Beeper\beeper.c</FilePath>
@@ -642,6 +642,16 @@
               <FileName>wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\WWDG\wwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\I2C_Touch\i2c_touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>touchKey.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\Key\touchKey.c</FilePath>
             </File>
           </Files>
         </Group>

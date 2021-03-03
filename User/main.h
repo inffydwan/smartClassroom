@@ -22,7 +22,9 @@
 #include <string.h>
 #include <stdio.h>
 #include "i2c_touch.h"
-
+#include "GUI.h"
+#include "MainTask.h"
+#include "DIALOG.h"
 typedef enum { FAILED = 0, PASSED = !FAILED} TestStatus;
 
 

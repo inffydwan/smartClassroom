@@ -74,61 +74,61 @@ void RTC_TimeAndDate_Set(void)
   * @param  无
   * @retval 无
   */
-void RTC_TimeAndDate_Show(void)
-{
-	uint8_t Rtctmp=0;
-	char LCDTemp[100];
-	RTC_TimeTypeDef RTC_TimeStructure;
-	RTC_DateTypeDef RTC_DateStructure;
-	
-	
-	while(1)
-	{
-		// 获取日历
-		HAL_RTC_GetTime(&Rtc_Handle, &RTC_TimeStructure, RTC_FORMAT_BIN);
-		HAL_RTC_GetDate(&Rtc_Handle, &RTC_DateStructure, RTC_FORMAT_BIN);
-			
-			// 每秒打印一次
-		if(Rtctmp != RTC_TimeStructure.Seconds)
-		{
-							
-			// 打印日期
-			printf("The Date :  Y:20%0.2d - M:%0.2d - D:%0.2d - W:%0.2d\r\n", 
-			RTC_DateStructure.Year,
-			RTC_DateStructure.Month, 
-			RTC_DateStructure.Date,
-			RTC_DateStructure.WeekDay);
+//void RTC_TimeAndDate_Show(void)
+//{
+//	uint8_t Rtctmp=0;
+//	char LCDTemp[100];
+//	RTC_TimeTypeDef RTC_TimeStructure;
+//	RTC_DateTypeDef RTC_DateStructure;
+//	
+//	
+//	while(1)
+//	{
+//		// 获取日历
+//		HAL_RTC_GetTime(&Rtc_Handle, &RTC_TimeStructure, RTC_FORMAT_BIN);
+//		HAL_RTC_GetDate(&Rtc_Handle, &RTC_DateStructure, RTC_FORMAT_BIN);
+//			
+//			// 每秒打印一次
+//		if(Rtctmp != RTC_TimeStructure.Seconds)
+//		{
+//							
+//			// 打印日期
+//			printf("The Date :  Y:20%0.2d - M:%0.2d - D:%0.2d - W:%0.2d\r\n", 
+//			RTC_DateStructure.Year,
+//			RTC_DateStructure.Month, 
+//			RTC_DateStructure.Date,
+//			RTC_DateStructure.WeekDay);
 
-			//液晶显示日期
-			//先把要显示的数据用sprintf函数转换为字符串，然后才能用液晶显示函数显示
-			sprintf(LCDTemp,"The Date :  Y:20%0.2d - M:%0.2d - D:%0.2d - W:%0.2d", 
-			RTC_DateStructure.Year,
-			RTC_DateStructure.Month, 
-			RTC_DateStructure.Date,
-			RTC_DateStructure.WeekDay);
-			
-			LCD_SetColors(LCD_COLOR_RED,LCD_COLOR_BLACK);
-			LCD_DisplayStringLine_EN_CN(8,(uint8_t *)LCDTemp); 
-			
-			// 打印时间
-			printf("The Time :  %0.2d:%0.2d:%0.2d \r\n\r\n", 
-			RTC_TimeStructure.Hours, 
-			RTC_TimeStructure.Minutes, 
-			RTC_TimeStructure.Seconds);
-			
-			//液晶显示时间
-			sprintf(LCDTemp,"The Time :  %0.2d:%0.2d:%0.2d", 
-			RTC_TimeStructure.Hours, 
-			RTC_TimeStructure.Minutes, 
-			RTC_TimeStructure.Seconds);
+//			//液晶显示日期
+//			//先把要显示的数据用sprintf函数转换为字符串，然后才能用液晶显示函数显示
+//			sprintf(LCDTemp,"The Date :  Y:20%0.2d - M:%0.2d - D:%0.2d - W:%0.2d", 
+//			RTC_DateStructure.Year,
+//			RTC_DateStructure.Month, 
+//			RTC_DateStructure.Date,
+//			RTC_DateStructure.WeekDay);
+//			
+//			LCD_SetColors(LCD_COLOR_RED,LCD_COLOR_BLACK);
+//			LCD_DisplayStringLine_EN_CN(8,(uint8_t *)LCDTemp); 
+//			
+//			// 打印时间
+//			printf("The Time :  %0.2d:%0.2d:%0.2d \r\n\r\n", 
+//			RTC_TimeStructure.Hours, 
+//			RTC_TimeStructure.Minutes, 
+//			RTC_TimeStructure.Seconds);
+//			
+//			//液晶显示时间
+//			sprintf(LCDTemp,"The Time :  %0.2d:%0.2d:%0.2d", 
+//			RTC_TimeStructure.Hours, 
+//			RTC_TimeStructure.Minutes, 
+//			RTC_TimeStructure.Seconds);
 
-			LCD_DisplayStringLine_EN_CN(10,(uint8_t *)LCDTemp);
-				
-		  (void)RTC->DR;
-		}
-		Rtctmp = RTC_TimeStructure.Seconds;
-	}	
-}
+//			LCD_DisplayStringLine_EN_CN(10,(uint8_t *)LCDTemp);
+//				
+//		  (void)RTC->DR;
+//		}
+//		Rtctmp = RTC_TimeStructure.Seconds;
+//	}	
+//}
 
 
 

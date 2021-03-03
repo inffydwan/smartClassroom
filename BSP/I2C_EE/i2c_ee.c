@@ -3,7 +3,7 @@
 static I2C_HandleTypeDef  I2C_Handle; 
 
 
-void HAL_I2C_MspInit()
+void HAL_I2C_MspInit(I2C_HandleTypeDef * I2C_Handle)
 {
 	GPIO_InitTypeDef GPIO_InitStruct;
 	

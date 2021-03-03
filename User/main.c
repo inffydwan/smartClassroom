@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	uint8_t wwdg_tr, wwdg_wr;
+	HAL_Init();
 
   SystemClock_Config();
 
@@ -11,16 +11,22 @@ int main(void)
 	led_init();	
 	beeperInit();
 
-	LCD_Init();
-   
+
 	RTC_CLK_Config();
 	
-	
-
-	while(1)
-	{
-		
-	}
+	SDRAM_Init();
+	/* LCD初始化 */
+	LCD_Init();
+  __HAL_RCC_CRC_CLK_ENABLE(); // STemWin GUI_Init前必须打开CRC
+  /* 初始化GUI */
+	GUI_Init();
+	/* 开启三缓冲 */
+	WM_MULTIBUF_Enable(1);
+  
+  while(1)
+  {
+    MainTask();
+  }
 }
 	
 

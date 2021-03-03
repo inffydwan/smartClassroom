@@ -39,11 +39,11 @@
 #include "stm32f4xx_it.h"
 #include "stm32f4xx_hal.h"
 #include "exti.h"
-
 /** @addtogroup STM32F4xx_HAL_Examples
   * @{
   */
-
+extern void LTDC_ISR_Handler(void);
+extern void DMA2D_ISR_Handler(void);
 /** @addtogroup Templates
   * @{
   */
@@ -190,13 +190,26 @@ void SysTick_Handler(void)
 /*  available peripheral interrupt handler's name please refer to the startup */
 /*  file (startup_stm32f4xx.s).                                               */
 /******************************************************************************/
-
 /**
-  * @brief  This function handles PPP interrupt request.
+  * @brief  This function handles LTDC global interrupt request.
   * @param  None
   * @retval None
   */
+void LTDC_IRQHandler(void)
+{
+	/* 行中断处理 */
+  LTDC_ISR_Handler();
+}
 
+/**
+  * @brief  This function handles DMA2D global interrupt request.
+  * @param  None
+  * @retval None
+  */
+void DMA2D_IRQHandler(void)
+{
+  DMA2D_ISR_Handler();
+}
 
 /**
   * @}

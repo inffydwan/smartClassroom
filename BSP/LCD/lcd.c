@@ -11,7 +11,7 @@ DMA2D 用于图像数据搬运、混合及格式转换（将处理好的数据存入显存），RAM 存储器作为
 其中显存可以使用 STM32 芯片内部的 SRAM 或外扩 SDRAM/SRAM，只要容量足够大即可(至少要能存储一帧图像数据)。
 */
 
-static LTDC_HandleTypeDef  Ltdc_Handler;
+LTDC_HandleTypeDef  Ltdc_Handler;
 static DMA2D_HandleTypeDef Dma2d_Handler;
 
 
@@ -172,9 +172,10 @@ static void LCD_GPIO_Config(void)
   
   HAL_GPIO_Init(LTDC_DISP_GPIO_PORT, &GPIO_InitStruct);
   
-  
   GPIO_InitStruct.Pin = LTDC_BL_GPIO_PIN; 
   HAL_GPIO_Init(LTDC_BL_GPIO_PORT, &GPIO_InitStruct);
+
+  HAL_GPIO_WritePin(LTDC_BL_GPIO_PORT, LTDC_BL_GPIO_PIN, GPIO_PIN_SET);  /* 开背光*/
   
 }
 
@@ -233,13 +234,6 @@ void LCD_Init(void)
     Ltdc_Handler.Init.TotalWidth =HSW+ HBP+LCD_PIXEL_WIDTH + HFP-1; 
     /* 配置总高度(VSW+VBP+有效像素高度+VFP-1) */
     Ltdc_Handler.Init.TotalHeigh =VSW+ VBP+LCD_PIXEL_HEIGHT + VFP-1;
-		    /* 设置LCD背景层的颜色，默认黑色 */
-    Ltdc_Handler.Init.Backcolor.Red = 0;
-    Ltdc_Handler.Init.Backcolor.Green = 0;
-    Ltdc_Handler.Init.Backcolor.Blue = 0;
-		  /* 初始化LCD的像素宽度和高度 */
-    Ltdc_Handler.LayerCfg->ImageWidth  = LCD_PIXEL_WIDTH;
-    Ltdc_Handler.LayerCfg->ImageHeight = LCD_PIXEL_HEIGHT;
 		
 		HAL_LTDC_Init(&Ltdc_Handler);
 
@@ -291,35 +285,6 @@ void LCD_Init(void)
 //  * @param  PixelFormat: 层的像素格式
 //  * @retval 无
 //  */
-//void LCD_LayerInit(uint16_t LayerIndex, uint32_t FB_Address,uint32_t PixelFormat)
-//{     
-//  LTDC_LayerCfgTypeDef  layer_cfg;
-
-//  /* 层初始化 */
-//  layer_cfg.WindowX0 = 0;				//窗口起始位置X坐标
-//  layer_cfg.WindowX1 = LCD_GetXSize();	//窗口结束位置X坐标
-//  layer_cfg.WindowY0 = 0;				//窗口起始位置Y坐标
-//  layer_cfg.WindowY1 = LCD_GetYSize();  //窗口结束位置Y坐标
-//  layer_cfg.PixelFormat = PixelFormat;	//像素格式
-//  layer_cfg.FBStartAdress = FB_Address; //层显存首地址
-//  layer_cfg.Alpha = 255;				//用于混合的透明度常量，范围（0—255）0为完全透明
-//  layer_cfg.Alpha0 = 0;					//默认透明度常量，范围（0—255）0为完全透明
-//  layer_cfg.Backcolor.Blue = 0;			//层背景颜色蓝色分量
-//  layer_cfg.Backcolor.Green = 0;		//层背景颜色绿色分量
-//  layer_cfg.Backcolor.Red = 0;			//层背景颜色红色分量
-//  layer_cfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;//层混合系数1
-//  layer_cfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;//层混合系数2
-//  layer_cfg.ImageWidth = LCD_GetXSize();//设置图像宽度
-//  layer_cfg.ImageHeight = LCD_GetYSize();//设置图像高度
-//  
-//  HAL_LTDC_ConfigLayer(&Ltdc_Handler, &layer_cfg, LayerIndex); //设置选中的层参数
-
-//  DrawProp[LayerIndex].BackColor = LCD_COLOR_WHITE;//设置层的字体背景颜色
-//  DrawProp[LayerIndex].pFont     = &LCD_DEFAULT_FONT;//设置层的字体类型
-//  DrawProp[LayerIndex].TextColor = LCD_COLOR_BLACK; //设置层的字体颜色
-//  
-//  __HAL_LTDC_RELOAD_CONFIG(&Ltdc_Handler);//重载层的配置参数
-//}
 
 ///**
 //  * @brief  选择LCD层
@@ -719,10 +684,10 @@ void LCD_Init(void)
 //    DrawProp[ActiveLayer].pFont->Height * ((DrawProp[ActiveLayer].pFont->Width + 7) / 8)]);
 //}
 
-///**
-//  * @brief  使能显示
-//  * @retval 无
-//  */
+/**
+  * @brief  使能显示
+  * @retval 无
+  */
 //void LCD_DisplayOn(void)
 //{
 //  /* 开显示 */

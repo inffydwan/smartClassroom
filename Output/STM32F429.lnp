@@ -28,6 +28,7 @@
 "..\output\stm32f4xx_hal_sd.o"
 "..\output\stm32f4xx_ll_sdmmc.o"
 "..\output\stm32f4xx_hal_i2c_ex.o"
+"..\output\stm32f4xx_hal_crc.o"
 "..\output\main.o"
 "..\output\stm32f4xx_it.o"
 "..\output\led.o"
@@ -52,6 +53,11 @@
 "..\output\diskio.o"
 "..\output\ff.o"
 "..\output\cc936.o"
+"..\output\gui_x.o"
+"..\STemWin\Lib\STemWin_CM4_wc16_ot_ARGB.a"
+"..\output\guiconf.o"
+"..\output\guidrv_wf.o"
+"..\output\maintask.o"
 --library_type=microlib --strict --scatter "..\Output\STM32F429.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

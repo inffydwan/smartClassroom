@@ -23,6 +23,8 @@
 #define  LCD_PIXEL_WIDTH    ((uint16_t)800)
 #define  LCD_PIXEL_HEIGHT   ((uint16_t)480)
 
+#define  LCD_FRAME_BUFFER       ((uint32_t)0xD0000000)
+
 #define LCD_COLOR_BLUE          ((uint32_t)0xFF0000FF)
 #define LCD_COLOR_GREEN         ((uint32_t)0xFF00FF00)
 #define LCD_COLOR_RED           ((uint32_t)0xFFFF0000)
@@ -249,33 +251,34 @@ typedef enum
 
 /* 当前使用的LCD，默认为5寸屏 */
 extern LCD_TypeDef cur_lcd;
+extern LTDC_HandleTypeDef  Ltdc_Handler;
 
 void LCD_Init(void);
-void LCD_LayerInit(uint16_t LayerIndex, uint32_t FB_Address,uint32_t PixelFormat);
-void LCD_SetFont(sFONT *fonts);
-uint32_t LCD_GetXSize(void);
-uint32_t LCD_GetYSize(void);
-void LCD_DisplayOn(void);
-void LCD_SelectLayer(uint32_t LayerIndex);
-void LCD_Clear(uint32_t Color);
-void LCD_SetTransparency(uint32_t LayerIndex, uint8_t Transparency);
-void LCD_SetColors(uint32_t TextColor, uint32_t BackColor);
-void LCD_DisplayChar(uint16_t Xpos, uint16_t Ypos, uint8_t Ascii);
-void LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
-void LCD_ClearLine(uint32_t Line);
-void LCD_SetTextColor(uint32_t Color);
-void LCD_DrawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
-void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
-void LCD_DrawCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
-void LCD_FillCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
-void LCD_DisplayStringLine_EN_CN(uint16_t Line, uint8_t *ptr);
-/*缩放*/
-void LCD_DisplayStringLineEx(uint16_t x, //显示的x点
-														 uint16_t y, //显示的y点
-														 uint16_t Font_width,	//要显示的字体宽度，英文字符在此基础上/2。注意为偶数
-														 uint16_t Font_Heig,	//要显示的字体高度，注意为偶数
-														 uint8_t *ptr,				//显示的字符内容
-														 uint16_t DrawModel);  //是否反色显示
+//void LCD_LayerInit(uint16_t LayerIndex, uint32_t FB_Address,uint32_t PixelFormat);
+//void LCD_SetFont(sFONT *fonts);
+//uint32_t LCD_GetXSize(void);
+//uint32_t LCD_GetYSize(void);
+//void LCD_DisplayOn(void);
+//void LCD_SelectLayer(uint32_t LayerIndex);
+//void LCD_Clear(uint32_t Color);
+//void LCD_SetTransparency(uint32_t LayerIndex, uint8_t Transparency);
+//void LCD_SetColors(uint32_t TextColor, uint32_t BackColor);
+//void LCD_DisplayChar(uint16_t Xpos, uint16_t Ypos, uint8_t Ascii);
+//void LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+//void LCD_ClearLine(uint32_t Line);
+//void LCD_SetTextColor(uint32_t Color);
+//void LCD_DrawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
+//void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
+//void LCD_DrawCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
+//void LCD_FillCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
+//void LCD_DisplayStringLine_EN_CN(uint16_t Line, uint8_t *ptr);
+///*缩放*/
+//void LCD_DisplayStringLineEx(uint16_t x, //显示的x点
+//														 uint16_t y, //显示的y点
+//														 uint16_t Font_width,	//要显示的字体宽度，英文字符在此基础上/2。注意为偶数
+//														 uint16_t Font_Heig,	//要显示的字体高度，注意为偶数
+//														 uint8_t *ptr,				//显示的字符内容
+//														 uint16_t DrawModel);  //是否反色显示
 
 
 #endif

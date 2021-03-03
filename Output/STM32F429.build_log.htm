@@ -9,12 +9,12 @@ License Information: 1 inffydwan, 1, LIC=FYKYW-QW6DE-VE4HA-1MCUG-J0CQI-5WN5H
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
-Toolchain Path:  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.14
-Assembler:       Armasm.exe V6.14
-Linker/Locator:  ArmLink.exe V6.14
-Library Manager: ArmAr.exe V6.14
-Hex Converter:   FromElf.exe V6.14
+Toolchain Path:  D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
 CPU DLL:         SARMCM3.DLL V5.31.0.0
 Dialog DLL:      DCM.DLL V1.17.3.0
 Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
@@ -25,71 +25,316 @@ C:\Users\inffydwan\Desktop\PRJS\smartClassRoom\ORIGINAL\Project\STM32F429.uvproj
 Project File Date:  03/03/2021
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.14', folder: 'D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin'
 Build target 'Target 1'
-../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
-../BSP/LCD\lcd.h(256): error: conflicting types for 'LCD_GetXSize'
-uint32_t LCD_GetXSize(void);
-         ^
-../STemWin/inc/LCD.h(392): note: previous declaration is here
-int LCD_GetXSize            (void);
-    ^
-../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
-../BSP/LCD\lcd.h(257): error: conflicting types for 'LCD_GetYSize'
-uint32_t LCD_GetYSize(void);
-         ^
-../STemWin/inc/LCD.h(393): note: previous declaration is here
-int LCD_GetYSize            (void);
-    ^
-../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
-../BSP/LCD\lcd.h(268): error: conflicting types for 'LCD_FillRect'
-void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
-     ^
-../STemWin/inc/LCD.h(648): note: previous declaration is here
-void LCD_FillRect(int x0, int y0, int x1, int y1);
-     ^
-../STemWin/Config/GUIDRV_wf.c(247): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
-DEFINE_DMA2D_COLORCONVERSION(M8888I,   LTDC_Pixelformat_ARGB8888)
-                                       ^
-../STemWin/Config/GUIDRV_wf.c(247): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
-../STemWin/Config/GUIDRV_wf.c(248): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
-DEFINE_DMA2D_COLORCONVERSION(M888,   LTDC_Pixelformat_ARGB8888) // Internal pixel format of emWin is 32 bit, because of that ARGB8888
-                                     ^
-../STemWin/Config/GUIDRV_wf.c(248): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
-../STemWin/Config/GUIDRV_wf.c(249): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
-DEFINE_DMA2D_COLORCONVERSION(M565,   LTDC_Pixelformat_RGB565)
-                                     ^
-../STemWin/Config/GUIDRV_wf.c(249): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
-../STemWin/Config/GUIDRV_wf.c(250): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
-DEFINE_DMA2D_COLORCONVERSION(M1555I, LTDC_Pixelformat_ARGB1555)
-                                     ^
-../STemWin/Config/GUIDRV_wf.c(250): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
-../STemWin/Config/GUIDRV_wf.c(251): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB4444'
-DEFINE_DMA2D_COLORCONVERSION(M4444I, LTDC_Pixelformat_ARGB4444)
-                                     ^
-../STemWin/Config/GUIDRV_wf.c(251): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB4444'
-../STemWin/Config/GUIDRV_wf.c(260): error: use of undeclared identifier 'LCD_FRAME_BUFFER'
-static const U32                  _aAddr[]          = { LCD_FRAME_BUFFER, LCD_FRAME_BUFFER + XSIZE_PHYS * YSIZE_PHYS * sizeof(U32) * NUM_VSCREENS * NUM_BUFFERS };
-                                                        ^
-../STemWin/Config/GUIDRV_wf.c(260): error: use of undeclared identifier 'LCD_FRAME_BUFFER'
-static const U32                  _aAddr[]          = { LCD_FRAME_BUFFER, LCD_FRAME_BUFFER + XSIZE_PHYS * YSIZE_PHYS * sizeof(U32) * NUM_VSCREENS * NUM_BUFFERS };
-                                                                          ^
-../STemWin/Config/GUIDRV_wf.c(298): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
-    return LTDC_Pixelformat_ARGB8888;
-           ^
-../STemWin/Config/GUIDRV_wf.c(300): error: use of undeclared identifier 'LTDC_Pixelformat_RGB888'
-    return LTDC_Pixelformat_RGB888;
-           ^
-../STemWin/Config/GUIDRV_wf.c(302): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
-    return LTDC_Pixelformat_RGB565;
-           ^
-../STemWin/Config/GUIDRV_wf.c(304): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
-    return LTDC_Pixelformat_ARGB1555;
-           ^
-fatal error: too many errors emitted, stopping now [-ferror-limit=]
-20 errors generated.
+assembling startup_stm32f429xx.s...
+compiling stm32f4xx_hal_cortex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_rtc.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_rtc_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_sdram.c...
+compiling stm32f4xx_hal_rng.c...
+compiling stm32f4xx_ll_fmc.c...
+compiling stm32f4xx_hal_ltdc.c...
+compiling stm32f4xx_hal_dma2d.c...
+compiling stm32f4xx_hal_adc.c...
+compiling stm32f4xx_hal_adc_ex.c...
+compiling stm32f4xx_hal_iwdg.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_wwdg.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_sd.c...
+compiling stm32f4xx_ll_sdmmc.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_crc.c...
+compiling stm32f4xx_it.c...
+..\BSP\EXIT\exti.h(10): warning:  #1295-D: Deprecated declaration extiInit - give arg types
+  void extiInit();
+..\BSP\EXIT\exti.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Beeper\beeper.h(14): warning:  #1295-D: Deprecated declaration beeperInit - give arg types
+  void beeperInit();
+..\BSP\Beeper\beeper.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\stm32f4xx_it.c: 4 warnings, 0 errors
+compiling led.c...
+compiling main.c...
+..\BSP\RCC\rcc.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\DMA_UART\dma_uart.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_EE\i2c_ee.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\SPI_FLASH\spi_flash.h(111): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RTC\rtc.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ADC\adc.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\TIMER\timer.h(6): warning:  #1295-D: Deprecated declaration tim6_init - give arg types
+  void tim6_init();
+..\BSP\TIMER\timer.h(7): warning:  #1295-D: Deprecated declaration tim8_init - give arg types
+  void tim8_init();
+..\BSP\TIMER\timer.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Key\touchKey.h(12): warning:  #1295-D: Deprecated declaration TPAD_Scan - give arg types
+  uint8_t TPAD_Scan();
+..\BSP\Key\touchKey.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Beeper\beeper.h(14): warning:  #1295-D: Deprecated declaration beeperInit - give arg types
+  void beeperInit();
+..\BSP\Beeper\beeper.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\IWDG\iwdg.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\WWDG\wwdg.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.h(281): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\i2c_touch.h(44): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(6): warning:  #177-D: variable "wwdg_tr"  was declared but never referenced
+  	uint8_t wwdg_tr, wwdg_wr;
+..\User\main.c(6): warning:  #177-D: variable "wwdg_wr"  was declared but never referenced
+  	uint8_t wwdg_tr, wwdg_wr;
+..\User\main.c(59): warning:  #177-D: function "Buffercmp"  was declared but never referenced
+  static TestStatus Buffercmp(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength)
+..\User\main.c(39): warning:  #177-D: function "Fill_Buffer"  was declared but never referenced
+  static void Fill_Buffer(uint32_t *pBuffer, uint32_t uwBufferLenght, uint32_t uwOffset)
+..\User\main.c: 23 warnings, 0 errors
+compiling key.c...
+..\BSP\Beeper\beeper.h(14): warning:  #1295-D: Deprecated declaration beeperInit - give arg types
+  void beeperInit();
+..\BSP\Beeper\beeper.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Key\touchKey.h(12): warning:  #1295-D: Deprecated declaration TPAD_Scan - give arg types
+  uint8_t TPAD_Scan();
+..\BSP\Key\touchKey.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Key\key.c(95): warning:  #1-D: last line of file ends without a newline
+  	
+..\BSP\Key\key.c: 5 warnings, 0 errors
+compiling exti.c...
+..\BSP\EXIT\exti.h(10): warning:  #1295-D: Deprecated declaration extiInit - give arg types
+  void extiInit();
+..\BSP\EXIT\exti.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\EXIT\exti.c(45): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\EXIT\exti.c: 3 warnings, 0 errors
+compiling uart.c...
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.c: 2 warnings, 0 errors
+compiling i2c_ee.c...
+..\BSP\I2C_EE\i2c_ee.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_EE\i2c_ee.c(6): error:  #147-D: declaration is incompatible with "void HAL_I2C_MspInit(I2C_HandleTypeDef *)"  (declared at line 547 of "..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h")
+  void HAL_I2C_MspInit()
+..\BSP\I2C_EE\i2c_ee.c: 1 warning, 1 error
+compiling dma_uart.c...
+..\BSP\DMA_UART\dma_uart.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\DMA_UART\dma_uart.c: 3 warnings, 0 errors
+compiling spi_flash.c...
+..\BSP\SPI_FLASH\spi_flash.h(111): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\SPI_FLASH\spi_flash.c: 1 warning, 0 errors
+compiling rtc.c...
+..\BSP\RTC\rtc.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.h(281): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RTC\rtc.c: 2 warnings, 0 errors
+compiling rcc.c...
+..\BSP\RCC\rcc.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RCC\rcc.c: 1 warning, 0 errors
+compiling sdram.c...
+compiling lcd.c...
+..\BSP\LCD\lcd.h(281): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.c(19): warning:  #177-D: variable "ActiveLayer"  was declared but never referenced
+  static uint32_t            ActiveLayer = 0;
+..\BSP\LCD\lcd.c(20): warning:  #177-D: variable "DrawProp"  was declared but never referenced
+  static LCD_DrawPropTypeDef DrawProp[MAX_LAYER_NUMBER];
+..\BSP\LCD\lcd.c: 3 warnings, 0 errors
+compiling timer.c...
+..\BSP\TIMER\timer.h(6): warning:  #1295-D: Deprecated declaration tim6_init - give arg types
+  void tim6_init();
+..\BSP\TIMER\timer.h(7): warning:  #1295-D: Deprecated declaration tim8_init - give arg types
+  void tim8_init();
+..\BSP\TIMER\timer.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\TIMER\timer.c(46): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\TIMER\timer.c: 4 warnings, 0 errors
+compiling adc.c...
+..\BSP\ADC\adc.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ADC\adc.c: 1 warning, 0 errors
+compiling advancedTimer.c...
+..\BSP\TIMER\timer.h(6): warning:  #1295-D: Deprecated declaration tim6_init - give arg types
+  void tim6_init();
+..\BSP\TIMER\timer.h(7): warning:  #1295-D: Deprecated declaration tim8_init - give arg types
+  void tim8_init();
+..\BSP\TIMER\timer.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\TIMER\advancedTimer.c(138): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\TIMER\advancedTimer.c(17): warning:  #177-D: variable "TIM_BDTRInitStructure"  was declared but never referenced
+  static TIM_BreakDeadTimeConfigTypeDef  TIM_BDTRInitStructure;
+..\BSP\TIMER\advancedTimer.c: 5 warnings, 0 errors
+compiling ff.c...
+compiling beeper.c...
+..\BSP\Beeper\beeper.h(14): warning:  #1295-D: Deprecated declaration beeperInit - give arg types
+  void beeperInit();
+..\BSP\Beeper\beeper.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Beeper\beeper.c: 2 warnings, 0 errors
+compiling cc936.c...
+compiling GUI_X.c...
+compiling GUIConf.c...
+compiling iwdg.c...
+..\BSP\IWDG\iwdg.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\IWDG\iwdg.c(20): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\IWDG\iwdg.c: 2 warnings, 0 errors
+compiling wwdg.c...
+..\BSP\WWDG\wwdg.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\WWDG\wwdg.c(46): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\WWDG\wwdg.c: 2 warnings, 0 errors
+compiling i2c_touch.c...
+..\BSP\I2C_Touch\i2c_touch.h(44): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\gt9xx.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\tft_lcd.h(281): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\i2c_touch.c(467): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\I2C_Touch\i2c_touch.c: 4 warnings, 0 errors
+compiling touchKey.c...
+..\BSP\Key\touchKey.h(12): warning:  #1295-D: Deprecated declaration TPAD_Scan - give arg types
+  uint8_t TPAD_Scan();
+..\BSP\Key\touchKey.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Key\touchKey.c(141): warning:  #177-D: variable "keyen"  was declared but never referenced
+  	static uint8_t keyen=0;
+..\BSP\Key\touchKey.c(142): warning:  #177-D: variable "oldKey"  was declared but never referenced
+  	static uint8_t oldKey = 0; 
+..\BSP\Key\touchKey.c: 4 warnings, 0 errors
+compiling diskio.c...
+..\BSP\SPI_FLASH\spi_flash.h(111): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RTC\rtc.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FATFS\diskio.c: 2 warnings, 0 errors
 compiling GUIDRV_wf.c...
-"..\Output\STM32F429.axf" - 19 Error(s), 0 Warning(s).
+..\BSP\LCD\lcd.h(256): error:  #147-D: declaration is incompatible with "int LCD_GetXSize(void)"  (declared at line 392 of "..\STemWin\inc\LCD.h")
+  uint32_t LCD_GetXSize(void);
+..\BSP\LCD\lcd.h(257): error:  #147-D: declaration is incompatible with "int LCD_GetYSize(void)"  (declared at line 393 of "..\STemWin\inc\LCD.h")
+  uint32_t LCD_GetYSize(void);
+..\BSP\LCD\lcd.h(268): error:  #147-D: declaration is incompatible with "void LCD_FillRect(int, int, int, int)"  (declared at line 648 of "..\STemWin\inc\LCD.h")
+  void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
+..\BSP\LCD\lcd.h(281): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\STemWin\Config\GUIDRV_wf.c(247): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M8888I,   LTDC_Pixelformat_ARGB8888)
+..\STemWin\Config\GUIDRV_wf.c(247): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M8888I,   LTDC_Pixelformat_ARGB8888)
+..\STemWin\Config\GUIDRV_wf.c(248): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M888,   LTDC_Pixelformat_ARGB8888) // Internal pixel format of emWin is 32 bit, because of that ARGB8888
+..\STemWin\Config\GUIDRV_wf.c(248): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M888,   LTDC_Pixelformat_ARGB8888) // Internal pixel format of emWin is 32 bit, because of that ARGB8888
+..\STemWin\Config\GUIDRV_wf.c(249): error:  #20: identifier "LTDC_Pixelformat_RGB565" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M565,   LTDC_Pixelformat_RGB565)
+..\STemWin\Config\GUIDRV_wf.c(249): error:  #20: identifier "LTDC_Pixelformat_RGB565" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M565,   LTDC_Pixelformat_RGB565)
+..\STemWin\Config\GUIDRV_wf.c(250): error:  #20: identifier "LTDC_Pixelformat_ARGB1555" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M1555I, LTDC_Pixelformat_ARGB1555)
+..\STemWin\Config\GUIDRV_wf.c(250): error:  #20: identifier "LTDC_Pixelformat_ARGB1555" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M1555I, LTDC_Pixelformat_ARGB1555)
+..\STemWin\Config\GUIDRV_wf.c(251): error:  #20: identifier "LTDC_Pixelformat_ARGB4444" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M4444I, LTDC_Pixelformat_ARGB4444)
+..\STemWin\Config\GUIDRV_wf.c(251): error:  #20: identifier "LTDC_Pixelformat_ARGB4444" is undefined
+  DEFINE_DMA2D_COLORCONVERSION(M4444I, LTDC_Pixelformat_ARGB4444)
+..\STemWin\Config\GUIDRV_wf.c(260): error:  #20: identifier "LCD_FRAME_BUFFER" is undefined
+  static const U32                  _aAddr[]          = { LCD_FRAME_BUFFER, LCD_FRAME_BUFFER + XSIZE_PHYS * YSIZE_PHYS * sizeof(U32) * NUM_VSCREENS * NUM_BUFFERS };
+..\STemWin\Config\GUIDRV_wf.c(298): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+      return LTDC_Pixelformat_ARGB8888;
+..\STemWin\Config\GUIDRV_wf.c(300): error:  #20: identifier "LTDC_Pixelformat_RGB888" is undefined
+      return LTDC_Pixelformat_RGB888;
+..\STemWin\Config\GUIDRV_wf.c(302): error:  #20: identifier "LTDC_Pixelformat_RGB565" is undefined
+      return LTDC_Pixelformat_RGB565;
+..\STemWin\Config\GUIDRV_wf.c(304): error:  #20: identifier "LTDC_Pixelformat_ARGB1555" is undefined
+      return LTDC_Pixelformat_ARGB1555;
+..\STemWin\Config\GUIDRV_wf.c(306): error:  #20: identifier "LTDC_Pixelformat_ARGB4444" is undefined
+      return LTDC_Pixelformat_ARGB4444;
+..\STemWin\Config\GUIDRV_wf.c(308): error:  #20: identifier "LTDC_Pixelformat_L8" is undefined
+      return LTDC_Pixelformat_L8;
+..\STemWin\Config\GUIDRV_wf.c(310): error:  #20: identifier "LTDC_Pixelformat_AL44" is undefined
+      return LTDC_Pixelformat_AL44;
+..\STemWin\Config\GUIDRV_wf.c(312): error:  #20: identifier "LTDC_Pixelformat_AL88" is undefined
+      return LTDC_Pixelformat_AL88;
+..\STemWin\Config\GUIDRV_wf.c(338): error:  #20: identifier "LTDC_Pixelformat_RGB888" is undefined
+    DMA2D->FGPFCCR  = LTDC_Pixelformat_RGB888         // Pixel format
+..\STemWin\Config\GUIDRV_wf.c(370): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+    DMA2D->FGPFCCR = LTDC_Pixelformat_ARGB8888;       // Foreground PFC Control Register (Defines the FG pixel format)
+..\STemWin\Config\GUIDRV_wf.c(416): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+    DMA2D->FGPFCCR = LTDC_Pixelformat_ARGB8888
+..\STemWin\Config\GUIDRV_wf.c(461): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+    DMA2D->FGPFCCR = LTDC_Pixelformat_ARGB8888
+..\STemWin\Config\GUIDRV_wf.c(528): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+    _DMA_ConvertColor(pIndex, pColor, PixelFormat, LTDC_Pixelformat_ARGB8888, NumItems);
+..\STemWin\Config\GUIDRV_wf.c(539): error:  #20: identifier "LTDC_Pixelformat_ARGB8888" is undefined
+    _DMA_ConvertColor(pColor, pIndex, LTDC_Pixelformat_ARGB8888, PixelFormat, NumItems);
+..\STemWin\Config\GUIDRV_wf.c(665): warning:  #223-D: function "LTDC_ReloadConfig" declared implicitly
+    LTDC_ReloadConfig(LTDC_SRCR_VBR); // Reload on next blanking period
+..\STemWin\Config\GUIDRV_wf.c(681): warning:  #223-D: function "LTDC_ReloadConfig" declared implicitly
+    LTDC_ReloadConfig(LTDC_SRCR_IMR/*LTDC_SRCR_VBR*/); // Reload on next blanking period/**/
+..\STemWin\Config\GUIDRV_wf.c(700): warning:  #223-D: function "LTDC_ReloadConfig" declared implicitly
+    LTDC_ReloadConfig(LTDC_SRCR_IMR);
+..\STemWin\Config\GUIDRV_wf.c(772): error:  #20: identifier "LTDC_Pixelformat_L8" is undefined
+    DMA2D->FGPFCCR = LTDC_Pixelformat_L8;             // Foreground PFC Control Register (Defines the input pixel format)
+..\STemWin\Config\GUIDRV_wf.c(795): warning:  #223-D: function "LTDC_Cmd" declared implicitly
+    LTDC_Cmd(ENABLE); /* display ON */
+..\STemWin\Config\GUIDRV_wf.c(803): warning:  #223-D: function "LTDC_Cmd" declared implicitly
+    LTDC_Cmd(DISABLE); /* display OFF */
+..\STemWin\Config\GUIDRV_wf.c(956): warning:  #223-D: function "LTDC_ReloadConfig" declared implicitly
+        LTDC_ReloadConfig(LTDC_SRCR_IMR);
+..\STemWin\Config\GUIDRV_wf.c(974): error:  #20: identifier "LTDC_Layer_InitTypeDef" is undefined
+    LTDC_Layer_InitTypeDef LTDC_Layer_InitStruct = {0};
+..\STemWin\Config\GUIDRV_wf.c: 9 warnings, 30 errors
+compiling MainTask.c...
+"..\Output\STM32F429.axf" - 31 Error(s), 83 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -103,7 +348,7 @@ Package Vendor: Keil
 
 <h2>Collection of Component Files used:</h2>
 Target not created.
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:03:06
 </pre>
 </body>
 </html>

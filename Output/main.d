@@ -1,60 +1,74 @@
-../output/main.o: ..\User\main.c ..\User\main.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
-  ..\User\stm32f4xx_hal_conf.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
-  D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
-  D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h \
-  ..\Libraries\CMSIS\Include\core_cm4.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Libraries\CMSIS\Include\cmsis_version.h \
-  ..\Libraries\CMSIS\Include\cmsis_compiler.h \
-  ..\Libraries\CMSIS\Include\cmsis_armclang.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
-  ..\Libraries\CMSIS\Include\mpu_armv7.h \
-  D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sd.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h \
-  ..\BSP\RCC\rcc.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\BSP\UART\uart.h ..\BSP\DMA_UART\dma_uart.h ..\BSP\I2C_EE\i2c_ee.h \
-  ..\BSP\SPI_FLASH\spi_flash.h ..\BSP\LED\led.h ..\BSP\Key\key.h \
-  ..\BSP\RTC\rtc.h ..\BSP\SDRAM\sdram.h ..\BSP\ADC\adc.h \
-  ..\BSP\TIMER\timer.h ..\BSP\Key\touchKey.h ..\BSP\Beeper\beeper.h \
-  ..\BSP\IWDG\iwdg.h ..\BSP\WWDG\wwdg.h ..\BSP\LCD\lcd.h \
-  ..\BSP\LCD\fonts.h ..\FATFS\ff.h ..\FATFS\integer.h ..\FATFS\ffconf.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\string.h \
-  ..\BSP\I2C_Touch\i2c_touch.h
+..\output\main.o: ..\User\main.c
+..\output\main.o: ..\User\main.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+..\output\main.o: ..\User\stm32f4xx_hal_conf.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h
+..\output\main.o: D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+..\output\main.o: D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h
+..\output\main.o: ..\Libraries\CMSIS\Include\core_cm4.h
+..\output\main.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\main.o: ..\Libraries\CMSIS\Include\cmsis_version.h
+..\output\main.o: ..\Libraries\CMSIS\Include\cmsis_compiler.h
+..\output\main.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
+..\output\main.o: ..\Libraries\CMSIS\Include\mpu_armv7.h
+..\output\main.o: D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
+..\output\main.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\stddef.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sd.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
+..\output\main.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h
+..\output\main.o: ..\BSP\RCC\rcc.h
+..\output\main.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\main.o: ..\BSP\UART\uart.h
+..\output\main.o: ..\BSP\DMA_UART\dma_uart.h
+..\output\main.o: ..\BSP\I2C_EE\i2c_ee.h
+..\output\main.o: ..\BSP\SPI_FLASH\spi_flash.h
+..\output\main.o: ..\BSP\LED\led.h
+..\output\main.o: ..\BSP\Key\key.h
+..\output\main.o: ..\BSP\RTC\rtc.h
+..\output\main.o: ..\BSP\SDRAM\sdram.h
+..\output\main.o: ..\BSP\ADC\adc.h
+..\output\main.o: ..\BSP\TIMER\timer.h
+..\output\main.o: ..\BSP\Key\touchKey.h
+..\output\main.o: ..\BSP\Beeper\beeper.h
+..\output\main.o: ..\BSP\IWDG\iwdg.h
+..\output\main.o: ..\BSP\WWDG\wwdg.h
+..\output\main.o: ..\BSP\LCD\lcd.h
+..\output\main.o: ..\BSP\LCD\fonts.h
+..\output\main.o: ..\FATFS\ff.h
+..\output\main.o: ..\FATFS\integer.h
+..\output\main.o: ..\FATFS\ffconf.h
+..\output\main.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\string.h
+..\output\main.o: ..\BSP\I2C_Touch\i2c_touch.h

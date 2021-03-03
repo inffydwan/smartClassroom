@@ -48,7 +48,7 @@
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h \
-  ..\BSP\LCD\fonts.h ..\BSP\SDRAM\sdram.h ..\BSP\LCD\font24.c \
-  ..\BSP\LCD\font20.c ..\BSP\LCD\font16.c ..\BSP\LCD\font12.c \
-  ..\BSP\LCD\font8.c ..\BSP\SPI_FLASH\spi_flash.h \
-  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdio.h
+  ..\BSP\LCD\fonts.h ..\BSP\SDRAM\sdram.h \
+  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  ..\BSP\LCD\font24.c ..\BSP\LCD\font20.c ..\BSP\LCD\font16.c \
+  ..\BSP\LCD\font12.c ..\BSP\LCD\font8.c ..\BSP\SPI_FLASH\spi_flash.h

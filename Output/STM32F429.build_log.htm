@@ -21,17 +21,75 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
-C:\Users\inffydwan\Desktop\PROJECTS\smartClassRoom\smartClassRoom_Flash_Wifi\Project\STM32F429.uvprojx
-Project File Date:  02/25/2021
+C:\Users\inffydwan\Desktop\PRJS\smartClassRoom\ORIGINAL\Project\STM32F429.uvprojx
+Project File Date:  03/03/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.14', folder: 'D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-compiling stm32f4xx_hal_i2c_ex.c...
-linking...
-Program Size: Code=31400 RO-data=184536 RW-data=28 ZI-data=27644  
-FromELF: creating hex file...
-"..\Output\STM32F429.axf" - 0 Error(s), 0 Warning(s).
+../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
+../BSP/LCD\lcd.h(256): error: conflicting types for 'LCD_GetXSize'
+uint32_t LCD_GetXSize(void);
+         ^
+../STemWin/inc/LCD.h(392): note: previous declaration is here
+int LCD_GetXSize            (void);
+    ^
+../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
+../BSP/LCD\lcd.h(257): error: conflicting types for 'LCD_GetYSize'
+uint32_t LCD_GetYSize(void);
+         ^
+../STemWin/inc/LCD.h(393): note: previous declaration is here
+int LCD_GetYSize            (void);
+    ^
+../STemWin/Config/GUIDRV_wf.c(69): warning: In file included from...
+../BSP/LCD\lcd.h(268): error: conflicting types for 'LCD_FillRect'
+void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
+     ^
+../STemWin/inc/LCD.h(648): note: previous declaration is here
+void LCD_FillRect(int x0, int y0, int x1, int y1);
+     ^
+../STemWin/Config/GUIDRV_wf.c(247): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
+DEFINE_DMA2D_COLORCONVERSION(M8888I,   LTDC_Pixelformat_ARGB8888)
+                                       ^
+../STemWin/Config/GUIDRV_wf.c(247): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
+../STemWin/Config/GUIDRV_wf.c(248): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
+DEFINE_DMA2D_COLORCONVERSION(M888,   LTDC_Pixelformat_ARGB8888) // Internal pixel format of emWin is 32 bit, because of that ARGB8888
+                                     ^
+../STemWin/Config/GUIDRV_wf.c(248): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
+../STemWin/Config/GUIDRV_wf.c(249): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
+DEFINE_DMA2D_COLORCONVERSION(M565,   LTDC_Pixelformat_RGB565)
+                                     ^
+../STemWin/Config/GUIDRV_wf.c(249): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
+../STemWin/Config/GUIDRV_wf.c(250): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
+DEFINE_DMA2D_COLORCONVERSION(M1555I, LTDC_Pixelformat_ARGB1555)
+                                     ^
+../STemWin/Config/GUIDRV_wf.c(250): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
+../STemWin/Config/GUIDRV_wf.c(251): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB4444'
+DEFINE_DMA2D_COLORCONVERSION(M4444I, LTDC_Pixelformat_ARGB4444)
+                                     ^
+../STemWin/Config/GUIDRV_wf.c(251): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB4444'
+../STemWin/Config/GUIDRV_wf.c(260): error: use of undeclared identifier 'LCD_FRAME_BUFFER'
+static const U32                  _aAddr[]          = { LCD_FRAME_BUFFER, LCD_FRAME_BUFFER + XSIZE_PHYS * YSIZE_PHYS * sizeof(U32) * NUM_VSCREENS * NUM_BUFFERS };
+                                                        ^
+../STemWin/Config/GUIDRV_wf.c(260): error: use of undeclared identifier 'LCD_FRAME_BUFFER'
+static const U32                  _aAddr[]          = { LCD_FRAME_BUFFER, LCD_FRAME_BUFFER + XSIZE_PHYS * YSIZE_PHYS * sizeof(U32) * NUM_VSCREENS * NUM_BUFFERS };
+                                                                          ^
+../STemWin/Config/GUIDRV_wf.c(298): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB8888'
+    return LTDC_Pixelformat_ARGB8888;
+           ^
+../STemWin/Config/GUIDRV_wf.c(300): error: use of undeclared identifier 'LTDC_Pixelformat_RGB888'
+    return LTDC_Pixelformat_RGB888;
+           ^
+../STemWin/Config/GUIDRV_wf.c(302): error: use of undeclared identifier 'LTDC_Pixelformat_RGB565'
+    return LTDC_Pixelformat_RGB565;
+           ^
+../STemWin/Config/GUIDRV_wf.c(304): error: use of undeclared identifier 'LTDC_Pixelformat_ARGB1555'
+    return LTDC_Pixelformat_ARGB1555;
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling GUIDRV_wf.c...
+"..\Output\STM32F429.axf" - 19 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,7 +102,8 @@ Package Vendor: Keil
   D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:06
+Target not created.
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

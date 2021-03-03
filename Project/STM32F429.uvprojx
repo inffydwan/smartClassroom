@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx,USE_STM32F429I_DISCO</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_HAL_Driver\Inc;..\User;..\BSP\LED;..\BSP\Key;..\BSP\EXIT;..\BSP\UART;..\BSP\DMA_UART;..\BSP\I2C_EE;..\BSP\SPI_FLASH;..\BSP\RTC;..\BSP\RCC;..\BSP\SDRAM;..\BSP\LCD;..\BSP\ADC;..\BSP\TIMER;..\BSP\TouchKey;..\BSP\Beeper;..\BSP\IWDG;..\BSP\WWDG;..\FATFS;..\BSP\I2C_Touch</IncludePath>
+              <IncludePath>..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_HAL_Driver\Inc;..\User;..\BSP\LED;..\BSP\Key;..\BSP\EXIT;..\BSP\UART;..\BSP\DMA_UART;..\BSP\I2C_EE;..\BSP\SPI_FLASH;..\BSP\RTC;..\BSP\RCC;..\BSP\SDRAM;..\BSP\LCD;..\BSP\ADC;..\BSP\TIMER;..\BSP\TouchKey;..\BSP\Beeper;..\BSP\IWDG;..\BSP\WWDG;..\FATFS;..\BSP\I2C_Touch;..\STemWin\Config;..\STemWin\inc;..\STemWin_Task</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -682,6 +682,46 @@
               <FileName>cc936.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FATFS\option\cc936.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemWin</GroupName>
+          <Files>
+            <File>
+              <FileName>GUI_X.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\OS\GUI_X.c</FilePath>
+            </File>
+            <File>
+              <FileName>STemWin_CM4_wc16_ot_ARGB.a</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\STemWin\Lib\STemWin_CM4_wc16_ot_ARGB.a</FilePath>
+            </File>
+            <File>
+              <FileName>GUIConf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Config\GUIConf.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIConf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\STemWin\Config\GUIConf.h</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDRV_wf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Config\GUIDRV_wf.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemWin/Task</GroupName>
+          <Files>
+            <File>
+              <FileName>MainTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin_Task\MainTask.c</FilePath>
             </File>
           </Files>
         </Group>

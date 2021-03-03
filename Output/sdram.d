@@ -1,8 +1,4 @@
 ../output/sdram.o: ..\BSP\SDRAM\sdram.c ..\BSP\SDRAM\sdram.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
-  ..\User\stm32f4xx_hal_conf.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
   D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h \
   ..\Libraries\CMSIS\Include\core_cm4.h \
@@ -14,6 +10,10 @@
   D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\Libraries\CMSIS\Include\mpu_armv7.h \
   D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
+  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
+  ..\User\stm32f4xx_hal_conf.h \
+  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
+  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
@@ -47,4 +47,5 @@
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h
+  ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h \
+  D:\Keil_v5\MDK-ARM\ARM\ARMCLANG\Bin\..\include\stdio.h

@@ -574,11 +574,6 @@
               <FilePath>..\BSP\Key\key.c</FilePath>
             </File>
             <File>
-              <FileName>exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\EXIT\exti.c</FilePath>
-            </File>
-            <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\UART\uart.c</FilePath>

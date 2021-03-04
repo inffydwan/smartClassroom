@@ -33,7 +33,6 @@
 "..\output\stm32f4xx_it.o"
 "..\output\led.o"
 "..\output\key.o"
-"..\output\exti.o"
 "..\output\uart.o"
 "..\output\dma_uart.o"
 "..\output\i2c_ee.o"

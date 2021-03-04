@@ -38,12 +38,17 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
 #include "stm32f4xx_hal.h"
-#include "exti.h"
+#include "i2c_touch.h"
 /** @addtogroup STM32F4xx_HAL_Examples
   * @{
   */
 extern void LTDC_ISR_Handler(void);
 extern void DMA2D_ISR_Handler(void);
+extern void GT9xx_GetOnePiont(void);
+
+
+
+
 /** @addtogroup Templates
   * @{
   */
@@ -157,6 +162,8 @@ uint8_t shortBeep = 0;
 uint8_t shortBeep_cnt = 0;
 uint8_t delay = 0;
 uint8_t delay_cnt = 0;
+extern volatile uint32_t OS_TimeMS;
+
 
 void SysTick_Handler(void)
 {
@@ -179,7 +186,7 @@ void SysTick_Handler(void)
 	if (delay) delay_cnt++;
 	
 	
-	
+	OS_TimeMS++;
 	
 	
 }
@@ -212,11 +219,18 @@ void DMA2D_IRQHandler(void)
 }
 
 /**
-  * @}
-  */ 
+  * @brief  This function handles TouchScreen interrupt request.
+  * @param  None
+  * @retval None
+  */	
+void GTP_IRQHandler(void)
+{
 
-/**
-  * @}
-  */
-
+		if(__HAL_GPIO_EXTI_GET_IT(GTP_INT_GPIO_PIN) != RESET) //确保是否产生了EXTI Line中断
+	{
+	/* 也可以改成定时调用 */
+    GT9xx_GetOnePiont();   
+    __HAL_GPIO_EXTI_CLEAR_IT(GTP_INT_GPIO_PIN);     //清除中断标志位
+	}  
+}
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

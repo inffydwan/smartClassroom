@@ -253,32 +253,62 @@ typedef enum
 extern LCD_TypeDef cur_lcd;
 extern LTDC_HandleTypeDef  Ltdc_Handler;
 
+
+typedef struct
+{
+  uint32_t LTDC_HorizontalStart;            /*!< Configures the Window Horizontal Start Position.
+                                                 This parameter must range from 0x000 to 0xFFF. */
+            
+  uint32_t LTDC_HorizontalStop;             /*!< Configures the Window Horizontal Stop Position.
+                                                 This parameter must range from 0x0000 to 0xFFFF. */
+  
+  uint32_t LTDC_VerticalStart;              /*!< Configures the Window vertical Start Position.
+                                                 This parameter must range from 0x000 to 0xFFF. */
+
+  uint32_t LTDC_VerticalStop;               /*!< Configures the Window vaertical Stop Position.
+                                                 This parameter must range from 0x0000 to 0xFFFF. */
+  
+  uint32_t LTDC_PixelFormat;                /*!< Specifies the pixel format. This parameter can be 
+                                                 one of value of @ref LTDC_Pixelformat */
+
+  uint32_t LTDC_ConstantAlpha;              /*!< Specifies the constant alpha used for blending.
+                                                 This parameter must range from 0x00 to 0xFF. */
+
+  uint32_t LTDC_DefaultColorBlue;           /*!< Configures the default blue value.
+                                                 This parameter must range from 0x00 to 0xFF. */
+
+  uint32_t LTDC_DefaultColorGreen;          /*!< Configures the default green value.
+                                                 This parameter must range from 0x00 to 0xFF. */
+            
+  uint32_t LTDC_DefaultColorRed;            /*!< Configures the default red value.
+                                                 This parameter must range from 0x00 to 0xFF. */
+
+  uint32_t LTDC_DefaultColorAlpha;          /*!< Configures the default alpha value.
+                                                 This parameter must range from 0x00 to 0xFF. */
+
+  uint32_t LTDC_BlendingFactor_1;           /*!< Select the blending factor 1. This parameter 
+                                                 can be one of value of @ref LTDC_BlendingFactor1 */
+
+  uint32_t LTDC_BlendingFactor_2;           /*!< Select the blending factor 2. This parameter 
+                                                 can be one of value of @ref LTDC_BlendingFactor2 */
+            
+  uint32_t LTDC_CFBStartAdress;             /*!< Configures the color frame buffer address */
+
+  uint32_t LTDC_CFBLineLength;              /*!< Configures the color frame buffer line length. 
+                                                 This parameter must range from 0x0000 to 0x1FFF. */
+
+  uint32_t LTDC_CFBPitch;                   /*!< Configures the color frame buffer pitch in bytes.
+                                                 This parameter must range from 0x0000 to 0x1FFF. */
+                                                 
+  uint32_t LTDC_CFBLineNumber;              /*!< Specifies the number of line in frame buffer. 
+                                                 This parameter must range from 0x000 to 0x7FF. */
+} LTDC_Layer_InitTypeDef;
+
+
 void LCD_Init(void);
-//void LCD_LayerInit(uint16_t LayerIndex, uint32_t FB_Address,uint32_t PixelFormat);
-//void LCD_SetFont(sFONT *fonts);
-//uint32_t LCD_GetXSize(void);
-//uint32_t LCD_GetYSize(void);
-//void LCD_DisplayOn(void);
-//void LCD_SelectLayer(uint32_t LayerIndex);
-//void LCD_Clear(uint32_t Color);
-//void LCD_SetTransparency(uint32_t LayerIndex, uint8_t Transparency);
-//void LCD_SetColors(uint32_t TextColor, uint32_t BackColor);
-//void LCD_DisplayChar(uint16_t Xpos, uint16_t Ypos, uint8_t Ascii);
-//void LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
-//void LCD_ClearLine(uint32_t Line);
-//void LCD_SetTextColor(uint32_t Color);
-//void LCD_DrawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
-//void LCD_FillRect(uint16_t Xpos, uint16_t Ypos, uint16_t Width, uint16_t Height);
-//void LCD_DrawCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
-//void LCD_FillCircle(uint16_t Xpos, uint16_t Ypos, uint16_t Radius);
-//void LCD_DisplayStringLine_EN_CN(uint16_t Line, uint8_t *ptr);
-///*缩放*/
-//void LCD_DisplayStringLineEx(uint16_t x, //显示的x点
-//														 uint16_t y, //显示的y点
-//														 uint16_t Font_width,	//要显示的字体宽度，英文字符在此基础上/2。注意为偶数
-//														 uint16_t Font_Heig,	//要显示的字体高度，注意为偶数
-//														 uint8_t *ptr,				//显示的字符内容
-//														 uint16_t DrawModel);  //是否反色显示
+void LTDC_LayerInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_Layer_InitTypeDef* LTDC_Layer_InitStruct);
+
+
 
 
 #endif

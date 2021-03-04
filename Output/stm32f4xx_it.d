@@ -49,6 +49,6 @@
 ..\output\stm32f4xx_it.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h
 ..\output\stm32f4xx_it.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
 ..\output\stm32f4xx_it.o: ..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h
-..\output\stm32f4xx_it.o: ..\BSP\EXIT\exti.h
-..\output\stm32f4xx_it.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\stm32f4xx_it.o: ..\BSP\I2C_Touch\i2c_touch.h
+..\output\stm32f4xx_it.o: D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin\..\include\string.h
 ..\output\stm32f4xx_it.o: ..\BSP\Beeper\beeper.h

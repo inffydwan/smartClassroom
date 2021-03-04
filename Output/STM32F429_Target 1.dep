@@ -1422,7 +1422,7 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
-F (..\User\main.c)(0x603F8257)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (..\User\main.c)(0x60402DF5)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (..\User\main.h)(0x603F7F9A)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
 I (..\User\stm32f4xx_hal_conf.h)(0x603F748C)
@@ -1488,13 +1488,13 @@ I (..\BSP\Key\touchKey.h)(0x6004F0C2)
 I (..\BSP\Beeper\beeper.h)(0x6004E334)
 I (..\BSP\IWDG\iwdg.h)(0x6004F8CF)
 I (..\BSP\WWDG\wwdg.h)(0x60050717)
-I (..\BSP\LCD\lcd.h)(0x603F7D98)
+I (..\BSP\LCD\lcd.h)(0x60403AE0)
 I (..\BSP\LCD\fonts.h)(0x6035B9B2)
 I (..\FATFS\ff.h)(0x60307A61)
 I (..\FATFS\integer.h)(0x60307A61)
 I (..\FATFS\ffconf.h)(0x60362A15)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\string.h)(0x5EC77604)
-I (..\BSP\I2C_Touch\i2c_touch.h)(0x6037749C)
+I (..\BSP\I2C_Touch\i2c_touch.h)(0x604028C8)
 I (..\STemWin\inc\GUI.h)(0x603F4FEF)
 I (..\STemWin\inc\GUI_ConfDefaults.h)(0x603F4FEF)
 I (..\STemWin\Config\GUIConf.h)(0x603F4FEF)
@@ -1539,7 +1539,7 @@ I (..\STemWin\inc\SWIPELIST.h)(0x603F4FEF)
 I (..\STemWin\inc\TEXT.h)(0x603F4FEF)
 I (..\STemWin\inc\TREEVIEW.h)(0x603F4FEF)
 I (..\STemWin\inc\KNOB.h)(0x603F4FEF)
-F (..\User\stm32f4xx_it.c)(0x603F7EC3)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\stm32f4xx_it.o --omf_browse ..\output\stm32f4xx_it.crf --depend ..\output\stm32f4xx_it.d)
+F (..\User\stm32f4xx_it.c)(0x60402D73)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\stm32f4xx_it.o --omf_browse ..\output\stm32f4xx_it.crf --depend ..\output\stm32f4xx_it.d)
 I (..\User\stm32f4xx_it.h)(0x5F9CAB09)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
 I (..\User\stm32f4xx_hal_conf.h)(0x603F748C)
@@ -1589,8 +1589,8 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
-I (..\BSP\EXIT\exti.h)(0x5FFEDFA5)
-I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+I (..\BSP\I2C_Touch\i2c_touch.h)(0x604028C8)
+I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\BSP\Beeper\beeper.h)(0x6004E334)
 F (..\BSP\LED\led.c)(0x5FFCFF86)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
 I (..\BSP\LED\led.h)(0x60050716)
@@ -1695,58 +1695,6 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
 I (..\BSP\Beeper\beeper.h)(0x6004E334)
 I (..\BSP\Key\touchKey.h)(0x6004F0C2)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (..\BSP\EXIT\exti.c)(0x5FF3CD84)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\exti.o --omf_browse ..\output\exti.crf --depend ..\output\exti.d)
-I (..\BSP\EXIT\exti.h)(0x5FFEDFA5)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
-I (..\User\stm32f4xx_hal_conf.h)(0x603F748C)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5F9CAB16)
-I (D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A41065E)
-I (D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5A41065E)
-I (..\Libraries\CMSIS\Include\core_cm4.h)(0x5FF28059)
-I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
-I (..\Libraries\CMSIS\Include\cmsis_version.h)(0x5F9CAAB7)
-I (..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x5F9CAAB7)
-I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x5F9CAAB7)
-I (..\Libraries\CMSIS\Include\mpu_armv7.h)(0x5F9CAAB7)
-I (D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A41065E)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x5F9CAB16)
-I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stddef.h)(0x5EC775FC)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h)(0x603CCEAB)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sd.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
-I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
-I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-I (..\BSP\LED\led.h)(0x60050716)
 F (..\BSP\UART\uart.c)(0x5FF438F7)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\uart.o --omf_browse ..\output\uart.crf --depend ..\output\uart.d)
 I (..\BSP\UART\uart.h)(0x5FFEE0DF)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
@@ -2002,7 +1950,7 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-I (..\BSP\LCD\lcd.h)(0x603F7D98)
+I (..\BSP\LCD\lcd.h)(0x60403AE0)
 I (..\BSP\LCD\fonts.h)(0x6035B9B2)
 I (..\BSP\SDRAM\sdram.h)(0x603F6F97)
 F (..\BSP\SDRAM\sdram.c)(0x603F6F97)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\sdram.o --omf_browse ..\output\sdram.crf --depend ..\output\sdram.d)
@@ -2107,8 +2055,8 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (..\BSP\LCD\lcd.c)(0x603F8418)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\lcd.o --omf_browse ..\output\lcd.crf --depend ..\output\lcd.d)
-I (..\BSP\LCD\lcd.h)(0x603F7D98)
+F (..\BSP\LCD\lcd.c)(0x60403AE0)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\lcd.o --omf_browse ..\output\lcd.crf --depend ..\output\lcd.d)
+I (..\BSP\LCD\lcd.h)(0x60403AE0)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
 I (..\User\stm32f4xx_hal_conf.h)(0x603F748C)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5F9CAB16)
@@ -2467,8 +2415,8 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
 I (..\BSP\LED\led.h)(0x60050716)
-F (..\BSP\I2C_Touch\i2c_touch.c)(0x603CE0B4)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\i2c_touch.o --omf_browse ..\output\i2c_touch.crf --depend ..\output\i2c_touch.d)
-I (..\BSP\I2C_Touch\i2c_touch.h)(0x6037749C)
+F (..\BSP\I2C_Touch\i2c_touch.c)(0x60401C50)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\i2c_touch.o --omf_browse ..\output\i2c_touch.crf --depend ..\output\i2c_touch.d)
+I (..\BSP\I2C_Touch\i2c_touch.h)(0x604028C8)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
 I (..\User\stm32f4xx_hal_conf.h)(0x603F748C)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5F9CAB16)
@@ -2517,11 +2465,19 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
+I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\BSP\I2C_Touch\gt9xx.h)(0x603771A4)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-I (..\BSP\LCD\tft_lcd.h)(0x603CCEAB)
+I (..\BSP\LCD\lcd.h)(0x60403AE0)
 I (..\BSP\LCD\fonts.h)(0x6035B9B2)
 I (..\BSP\SDRAM\sdram.h)(0x603F6F97)
+I (..\STemWin\inc\GUI.h)(0x603F4FEF)
+I (..\STemWin\inc\GUI_ConfDefaults.h)(0x603F4FEF)
+I (..\STemWin\Config\GUIConf.h)(0x603F4FEF)
+I (..\STemWin\inc\GUI_Type.h)(0x603F4FEF)
+I (..\STemWin\inc\LCD.h)(0x603F4FEF)
+I (..\STemWin\inc\Global.h)(0x603F4FEF)
+I (..\STemWin\inc\GUI_Version.h)(0x603F4FEF)
 F (..\BSP\Key\touchKey.c)(0x6004F307)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\touchkey.o --omf_browse ..\output\touchkey.crf --depend ..\output\touchkey.d)
 I (..\BSP\Key\touchKey.h)(0x6004F0C2)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5F9CAB16)
@@ -2660,7 +2616,7 @@ I (..\STemWin\inc\LCD.h)(0x603F4FEF)
 I (..\STemWin\inc\Global.h)(0x603F4FEF)
 I (..\STemWin\inc\GUI_Version.h)(0x603F4FEF)
 F (..\STemWin\Config\GUIConf.h)(0x603F4FEF)()
-F (..\STemWin\Config\GUIDRV_wf.c)(0x603F7D98)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\guidrv_wf.o --omf_browse ..\output\guidrv_wf.crf --depend ..\output\guidrv_wf.d)
+F (..\STemWin\Config\GUIDRV_wf.c)(0x60403AE1)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\guidrv_wf.o --omf_browse ..\output\guidrv_wf.crf --depend ..\output\guidrv_wf.d)
 I (..\STemWin\inc\GUI.h)(0x603F4FEF)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stddef.h)(0x5EC775FC)
 I (..\STemWin\inc\GUI_ConfDefaults.h)(0x603F4FEF)
@@ -2721,12 +2677,12 @@ I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5F9CAB16)
 I (..\Libraries\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h)(0x5F9CAB16)
-I (..\BSP\LCD\lcd.h)(0x603F7D98)
+I (..\BSP\LCD\lcd.h)(0x60403AE0)
 I (..\BSP\LCD\fonts.h)(0x6035B9B2)
 I (..\BSP\SDRAM\sdram.h)(0x603F6F97)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (..\BSP\UART\uart.h)(0x5FFEE0DF)
-F (..\STemWin_Task\MainTask.c)(0x603F729F)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\maintask.o --omf_browse ..\output\maintask.crf --depend ..\output\maintask.d)
+F (..\STemWin_Task\MainTask.c)(0x60403942)(-c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32F4xx_HAL_Driver\Inc -I ..\User -I ..\BSP\LED -I ..\BSP\Key -I ..\BSP\EXIT -I ..\BSP\UART -I ..\BSP\DMA_UART -I ..\BSP\I2C_EE -I ..\BSP\SPI_FLASH -I ..\BSP\RTC -I ..\BSP\RCC -I ..\BSP\SDRAM -I ..\BSP\LCD -I ..\BSP\ADC -I ..\BSP\TIMER -I ..\BSP\TouchKey -I ..\BSP\Beeper -I ..\BSP\IWDG -I ..\BSP\WWDG -I ..\FATFS -I ..\BSP\I2C_Touch -I ..\STemWin\Config -I ..\STemWin\inc -I ..\STemWin_Task-ID:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil_v5\MDK-ARM\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx -DUSE_STM32F429I_DISCO --C99-o ..\output\maintask.o --omf_browse ..\output\maintask.crf --depend ..\output\maintask.d)
 I (..\STemWin_Task\MainTask.h)(0x603F4FEF)
 I (..\STemWin\inc\GUI.h)(0x603F4FEF)
 I (D:\Keil_v5\MDK-ARM\ARM\ARMCC\include\stddef.h)(0x5EC775FC)

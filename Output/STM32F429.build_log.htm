@@ -21,24 +21,92 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
-C:\Users\inffydwan\Desktop\PRJS\smartClassRoom\ORIGINAL\Project\STM32F429.uvprojx
-Project File Date:  03/03/2021
+C:\Users\inffydwan\Desktop\PRJS\smartClassRoom\smartClassRoom_Flash_Wifi\Project\STM32F429.uvprojx
+Project File Date:  03/04/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\MDK-ARM\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling lcd.c...
-..\BSP\LCD\lcd.h(284): warning:  #1-D: last line of file ends without a newline
+compiling rtc.c...
+..\BSP\RTC\rtc.h(37): warning:  #1-D: last line of file ends without a newline
   #endif
+..\BSP\LCD\lcd.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RTC\rtc.c: 2 warnings, 0 errors
+compiling lcd.c...
+..\BSP\LCD\lcd.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.c(323): warning:  #1-D: last line of file ends without a newline
+  }
 ..\BSP\LCD\lcd.c(19): warning:  #177-D: variable "ActiveLayer"  was declared but never referenced
   static uint32_t            ActiveLayer = 0;
 ..\BSP\LCD\lcd.c(20): warning:  #177-D: variable "DrawProp"  was declared but never referenced
   static LCD_DrawPropTypeDef DrawProp[MAX_LAYER_NUMBER];
-..\BSP\LCD\lcd.c: 3 warnings, 0 errors
+..\BSP\LCD\lcd.c: 4 warnings, 0 errors
+compiling i2c_touch.c...
+..\BSP\I2C_Touch\i2c_touch.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\gt9xx.h(88): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\i2c_touch.c(668): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\I2C_Touch\i2c_touch.c: 4 warnings, 0 errors
+compiling GUIDRV_wf.c...
+..\BSP\LCD\lcd.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\STemWin\Config\GUIDRV_wf.c: 3 warnings, 0 errors
+compiling main.c...
+..\BSP\RCC\rcc.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\UART\uart.h(9): warning:  #1295-D: Deprecated declaration uart1_init - give arg types
+  void uart1_init();
+..\BSP\UART\uart.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\DMA_UART\dma_uart.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_EE\i2c_ee.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\SPI_FLASH\spi_flash.h(111): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\RTC\rtc.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ADC\adc.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\TIMER\timer.h(6): warning:  #1295-D: Deprecated declaration tim6_init - give arg types
+  void tim6_init();
+..\BSP\TIMER\timer.h(7): warning:  #1295-D: Deprecated declaration tim8_init - give arg types
+  void tim8_init();
+..\BSP\TIMER\timer.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Key\touchKey.h(12): warning:  #1295-D: Deprecated declaration TPAD_Scan - give arg types
+  uint8_t TPAD_Scan();
+..\BSP\Key\touchKey.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Beeper\beeper.h(14): warning:  #1295-D: Deprecated declaration beeperInit - give arg types
+  void beeperInit();
+..\BSP\Beeper\beeper.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\IWDG\iwdg.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\WWDG\wwdg.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\LCD\lcd.h(314): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\I2C_Touch\i2c_touch.h(65): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(3): warning:  #177-D: function "SysTick_Init"  was declared but never referenced
+  static void SysTick_Init(void);
+..\User\main.c: 20 warnings, 0 errors
 linking...
-Program Size: Code=72992 RO-data=19112 RW-data=232 ZI-data=8391296  
+Program Size: Code=84652 RO-data=34980 RW-data=332 ZI-data=8391552  
 FromELF: creating hex file...
-"..\Output\STM32F429.axf" - 0 Error(s), 3 Warning(s).
+"..\Output\STM32F429.axf" - 0 Error(s), 33 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +119,7 @@ Package Vendor: Keil
   D:\Users\inffydwan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:10
+Build Time Elapsed:  00:00:28
 </pre>
 </body>
 </html>
